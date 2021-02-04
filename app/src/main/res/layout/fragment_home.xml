@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:text="@string/tv_input"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/et_input"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg_convert_select"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_10to2"
+                android:text="@string/rb_10to2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb_10to16"
+                android:text="@string/rb_10to16"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb_2to10"
+                android:text="@string/rb_2to10"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb_2to16"
+                android:text="@string/rb_2to16"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_convert"
+            android:text="@string/btn_convert"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"/>
+        <Button
+            android:id="@+id/btn_copy"
+            android:text="@string/btn_copy"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:text="@string/btn_clear"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/tv_result_title"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_result_Content"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
