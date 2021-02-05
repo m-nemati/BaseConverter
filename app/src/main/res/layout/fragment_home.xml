@@ -18,6 +18,7 @@
     <EditText
         android:id="@+id/et_input"
         android:paddingLeft="10dp"
+        android:hint="@string/tv_type"
         android:textColor="@color/black"
         android:gravity="top"
         android:layout_width="match_parent"
@@ -41,21 +42,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <RadioButton
+                android:visibility="invisible"
                 android:id="@+id/rb_10to16"
                 android:text="@string/rb_10to16"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <RadioButton
                 android:id="@+id/rb_2to10"
                 android:text="@string/rb_2to10"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <RadioButton
+                android:visibility="invisible"
                 android:id="@+id/rb_2to16"
                 android:text="@string/rb_2to16"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </RadioGroup>

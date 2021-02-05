@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import ir.mnemati.baseconvertor.R
 import java.lang.Exception
+import java.lang.Math.pow
 
 class HomeFragment : Fragment() {
 
@@ -64,7 +65,17 @@ class HomeFragment : Fragment() {
 
         }
         fun convert10to16(){}
-        fun convert2to10(){}
+        fun convert2to10(input_get:String){
+            var input = input_get.reversed()
+            var sum = 0
+
+            for (i in 0..input.length - 1) {
+                sum += input[i].toString().toInt() * pow(2.toDouble(), i.toDouble()).toInt()
+
+            }
+            tv_result.text = sum.toString()
+
+        }
         fun convert2to16(){}
         fun convert0(){
             Toast.makeText(activity, "Please select convert type", Toast.LENGTH_SHORT).show()
@@ -91,7 +102,7 @@ class HomeFragment : Fragment() {
 
                     1 -> convert10to2(input_data)
                     2 -> convert10to16()
-                    3 -> convert2to10()
+                    3 -> convert2to10(input_data)
                     4 -> convert2to16()
                     else -> convert0()
                 }
