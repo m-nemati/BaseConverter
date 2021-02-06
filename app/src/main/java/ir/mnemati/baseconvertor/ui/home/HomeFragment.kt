@@ -66,6 +66,12 @@ class HomeFragment : Fragment() {
         }
         fun convert10to16(){}
         fun convert2to10(input_get:String){
+            for(j in input_get){
+                if (!j.toString().equals("0") && !j.toString().equals("1")){
+                    Toast.makeText(activity, "Input string is not in binary format", Toast.LENGTH_SHORT).show()
+                    return
+                }
+            }
             var input = input_get.reversed()
             var sum = 0
 
